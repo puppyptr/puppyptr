@@ -3,20 +3,21 @@
 > very queer demigirl hacker • software & game dev • makes random things ^w^
 
 **my stats**
-- **3** stars across repos
-- **1** commits this year
-- **2** total pull requests
+- **4** stars across repos
+- **8** commits this year
+- **12** total pull requests
 - **0** total issues
 - **0** repos contributed to
 
 **top languages**
 ```
-Python          ▓▓▓▓▓▓▓░░░ 72.41%
-Rust            ▓▓░░░░░░░░ 18.26%
-JavaScript      ▓░░░░░░░░░ 9.32%
+Rust            ▓▓▓▓▓▓░░░░ 63.25%
+Python          ▓▓▓░░░░░░░ 31.79%
+JavaScript      ░░░░░░░░░░ 4.09%
+Makefile        ░░░░░░░░░░ 0.87%
 ```
 
-_Last updated 2026-01-23 18:05:06 UTC_
+_Last updated 2026-01-24 11:44:03 UTC_
 
 <div align="left">
   <img src="https://avatars.githubusercontent.com/u/65957437?v=4&size=128" width="128" height="128" style="border-radius:50%;" />
