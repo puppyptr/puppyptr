@@ -1,33 +1,39 @@
-### hii, i’m elizabeth / puppyptr 🐾
+### haii, i’m elizabeth (puppyptr) 🐾
 
-> very queer demigirl hacker • software & game dev • makes random things ^w^
-
-**my stats**
-- **4** stars across repos
-- **8** commits this year
-- **12** total pull requests
-- **0** total issues
-- **0** repos contributed to
+> very queer demigirl hacker • software dev & music artist • makes random things ^w^
 
 **top languages**
 ```
-Rust            ▓▓▓▓▓▓░░░░ 63.25%
-Python          ▓▓▓░░░░░░░ 31.79%
-JavaScript      ░░░░░░░░░░ 4.09%
+Rust            ▓▓▓▓▓▓░░░░ 63.25% 
+Python          ▓▓▓░░░░░░░ 31.79% 
+JavaScript      ░░░░░░░░░░ 4.09% 
 Makefile        ░░░░░░░░░░ 0.87%
 ```
 
-_Last updated 2026-01-24 11:44:03 UTC_
+**my stats**
+```python
+- 4 stars across repos
+- 10 commits this year
+- 12 total pull requests
+- 0 total issues
+- 0 repos contributed to
+- 8 total owned repos
+- Most Starred Repo: rustar (1)
+- Avg commits per repo: 1.1
+```
+_Last updated 2026-01-26 03:23:45 UTC_
 
-<div align="left">
-  <img src="https://avatars.githubusercontent.com/u/65957437?v=4&size=128" width="128" height="128" style="border-radius:50%;" />
-  <br />
-  <sub>this is me</sub>
-</div>  
-<br>
+**fun fact:**  
+im attempting to learn rust... i kinda suck at it
+
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/65957437?v=4&size=128" width="128" height="128" style="border-radius:50%;">
+  <br>
+  <sub>this is me btw</sub>
+</p>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=puppyptr&color=grey)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/puppyptr)
 
-profile readme inspired by ptrpaws!!!!
+*Profile README inspired by [ptrpaws](https://github.com/ptrpaws) 🐾*
