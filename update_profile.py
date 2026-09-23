@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 USERNAME = "puppyptr"
 README = "README.md"
 
+
 def github_api(path):
     url = f"https://api.github.com{path}"
 
@@ -21,6 +22,7 @@ def github_api(path):
 
     with urllib.request.urlopen(request) as response:
         return json.load(response)
+
 
 def get_all_repos():
     repos = []
@@ -38,6 +40,7 @@ def get_all_repos():
         page += 1
 
     return repos
+
 
 def get_stats(repos):
     stars = sum(repo["stargazers_count"] for repo in repos)
@@ -59,17 +62,17 @@ def get_stats(repos):
         ),
     }
 
+
 def get_yearly_commit_count():
     year = datetime.now(timezone.utc).year
 
-
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
-    user(login: $login) {
+      user(login: $login) {
         contributionsCollection(from: $from, to: $to) {
-        totalCommitContributions
+          totalCommitContributions
         }
-    }
+      }
     }
     """
 
@@ -109,17 +112,15 @@ def get_yearly_commit_count():
 
 def get_pull_requests():
     data = github_api(
-    f"/search/issues?q=author:{USERNAME}+type:pr"
+        f"/search/issues?q=author:{USERNAME}+type:pr"
     )
-
     return data["total_count"]
 
 
 def get_issues():
     data = github_api(
-    f"/search/issues?q=author:{USERNAME}+type:issue"
+        f"/search/issues?q=author:{USERNAME}+type:issue"
     )
-
     return data["total_count"]
 
 
@@ -159,9 +160,11 @@ def get_language_percentages(repos):
         )
     )
 
+
 def language_bar(percentage, width=10):
     filled = round((percentage / 100) * width)
     return "▓" * filled + "░" * (width - filled)
+
 
 def format_languages(languages):
     lines = []
@@ -175,9 +178,10 @@ def format_languages(languages):
 
     return "\n".join(lines)
 
+
 def generate_readme(stats, languages, commits, prs, issues):
     now = datetime.now(timezone.utc).strftime(
-    "%Y-%m-%d %H:%M:%S UTC"
+        "%Y-%m-%d %H:%M:%S UTC"
     )
 
     avg_commits = (
@@ -188,48 +192,45 @@ def generate_readme(stats, languages, commits, prs, issues):
 
     language_text = format_languages(languages)
 
-    return f"""### haii, i’m elizabeth (puppyptr) 🐾
+    return (
+        "### haii, i’m elizabeth (puppyptr) 🐾\n"
+        "\n"
+        "> very queer demigirl hacker • software dev & music artist • makes random things ^w^\n"
+        "\n"
+        "**top languages**\n"
+        "```\n"
+        f"{language_text}\n"
+        "```\n"
+        "\n"
+        "**my stats**\n"
+        "```python\n"
+        f"- {stats['stars']} stars across repos\n"
+        f"- {commits} commits this year\n"
+        f"- {prs} total pull requests\n"
+        f"- {issues} total issues\n"
+        "- 0 repos contributed to\n"
+        f"- {stats['repos']} total owned repos\n"
+        f"- Most Starred Repo: {stats['most_starred']} ({stats['most_starred_count']})\n"
+        f"- Avg commits per repo: {avg_commits:.1f}\n"
+        "```\n"
+        f"_Last updated {now}_\n"
+        "\n"
+        "**fun fact:**  \n"
+        "im attempting to learn rust... i kinda suck at it\n"
+        "\n"
+        '<p align="center">\n'
+        '  <img src="https://avatars.githubusercontent.com/u/65957437?v=4&size=128" width="128" height="128" style="border-radius:50%;">\n'
+        "  <br>\n"
+        "  <sub>this is me btw</sub>\n"
+        "</p>\n"
+        "\n"
+        "![Profile Views](https://komarev.com/ghpvc/?username=puppyptr&color=grey)\n"
+        "\n"
+        "[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/puppyptr)\n"
+        "\n"
+        "*Profile README inspired by [ptrpaws](https://github.com/ptrpaws) 🐾*\n"
+    )
 
-```
-
-> very queer demigirl hacker • software dev & music artist • makes random things ^w^
-
-**top languages**
-
-```
-{language_text}
-```
-
-**my stats**
-
-```python
-- {stats["stars"]} stars across repos
-- {commits} commits this year
-- {prs} total pull requests
-- {issues} total issues
-- 0 repos contributed to
-- {stats["repos"]} total owned repos
-- Most Starred Repo: {stats["most_starred"]} ({stats["most_starred_count"]})
-- Avg commits per repo: {avg_commits:.1f}
-```
-
-*Last updated {now}*
-
-**fun fact:**
-im attempting to learn rust... i kinda suck at it
-
-<p align="center">
-  <img src="https://avatars.githubusercontent.com/u/65957437?v=4&size=128" width="128" height="128" style="border-radius:50%;">
-  <br>
-  <sub>this is me btw</sub>
-</p>
-
-![Profile Views](https://komarev.com/ghpvc/?username=puppyptr\&color=grey)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/puppyptr)
-
-*Profile README inspired by [ptrpaws](https://github.com/ptrpaws) 🐾*
-"""
 
 def main():
     print("Fetching repositories...")
@@ -262,6 +263,7 @@ def main():
         file.write(readme)
 
     print("README.md updated!")
+
 
 if __name__ == "__main__":
     main()
