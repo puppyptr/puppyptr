@@ -1,22 +1,18 @@
 ### haii, i’m elizabeth (puppyptr) 🐾
 
-```
-
 > very queer demigirl hacker • software dev & music artist • makes random things ^w^
 
 **top languages**
-
 ```
-Rust            ▓▓▓▓▓░░░░░ 49.81%
-Python          ▓▓▓░░░░░░░ 29.17%
-Kotlin          ▓░░░░░░░░░ 14.13%
-JavaScript      ░░░░░░░░░░ 3.22%
-Java            ░░░░░░░░░░ 2.99%
+Rust            ▓▓▓▓▓░░░░░ 49.67%
+Python          ▓▓▓░░░░░░░ 29.38%
+Kotlin          ▓░░░░░░░░░ 14.09%
+JavaScript      ░░░░░░░░░░ 3.21%
+Java            ░░░░░░░░░░ 2.98%
 Makefile        ░░░░░░░░░░ 0.68%
 ```
 
 **my stats**
-
 ```python
 - 16 stars across repos
 - 11 commits this year
@@ -27,10 +23,9 @@ Makefile        ░░░░░░░░░░ 0.68%
 - Most Starred Repo: bpScript (2)
 - Avg commits per repo: 1.2
 ```
+_Last updated 2026-09-23 17:41:18 UTC_
 
-*Last updated 2026-09-23 17:37:22 UTC*
-
-**fun fact:**
+**fun fact:**  
 im attempting to learn rust... i kinda suck at it
 
 <p align="center">
@@ -39,7 +34,7 @@ im attempting to learn rust... i kinda suck at it
   <sub>this is me btw</sub>
 </p>
 
-![Profile Views](https://komarev.com/ghpvc/?username=puppyptr\&color=grey)
+![Profile Views](https://komarev.com/ghpvc/?username=puppyptr&color=grey)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/puppyptr)
 
