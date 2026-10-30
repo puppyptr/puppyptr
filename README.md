@@ -23,7 +23,7 @@ Makefile        ░░░░░░░░░░ 0.68%
 - Most Starred Repo: bpScript (2)
 - Avg commits per repo: 1.3
 ```
-_Last updated 2026-10-29 09:12:15 UTC_
+_Last updated 2026-10-30 09:24:42 UTC_
 
 **fun fact:**  
 im attempting to learn rust... i kinda suck at it
