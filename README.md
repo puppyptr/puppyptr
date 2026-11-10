@@ -15,15 +15,15 @@ Makefile        ░░░░░░░░░░ 0.68%
 **my stats**
 ```python
 - 16 stars across repos
-- 12 commits this year
+- 13 commits this year
 - 12 total pull requests
 - 0 total issues
 - 0 repos contributed to
 - 9 total owned repos
 - Most Starred Repo: bpScript (2)
-- Avg commits per repo: 1.3
+- Avg commits per repo: 1.4
 ```
-_Last updated 2026-11-09 10:45:37 UTC_
+_Last updated 2026-11-10 10:40:05 UTC_
 
 **fun fact:**  
 im attempting to learn rust... i kinda suck at it
